@@ -1,0 +1,487 @@
+*,div{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:afert{
+	content: " ";
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	display: block;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+/*初始化结束*/
+.zong{
+	width: 980px;
+	height: 550px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.tishi{
+	width: 980px;
+	height: 550px;
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+	background: rgb(0,0,0,0.9);
+	font: 400 30px/40px "微软雅黑";
+	text-align: center;
+}
+.tishi p{
+	margin-top: 220px;
+}
+@keyframes ss {
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(-100%);
+	}
+}
+.one{
+	width: 980px;
+	height: 550px;
+	/*display: none;*/
+	margin: 0 auto;
+	background: url(../images/bg.jpg);
+}
+.one-bg{
+	width: 100%;
+	height: 100%;
+	padding-top: 47px;
+	background: rgb(0,0,0,0.2);
+}
+.head{
+	width: 105px;
+	height: 105px;
+	border: 2px solid #a35c60;
+	border-radius: 50%;
+	max-width: 105px;
+	overflow: hidden;
+	background: url(../images/tx.jpg);
+	margin-left: 52px;
+	transition: all 2s;
+	animation: 2s linear;
+}
+.head:hover{
+	transform: rotateY(180deg);
+}
+.text1{
+	text-align: center;
+	color: #fff;
+	margin-top: 35px;
+	-webkit-text-shadow: 2px 2px 2px rgb(0,0,0,0.6);
+	-o-text-shadow: 2px 2px 2px rgb(0,0,0,0.6);
+	text-shadow: 2px 2px 2px rgb(0,0,0,0.6);
+	font: 400 30px/50px "KaiTi";
+}
+.start{
+	width: 88px;
+	height: 88px;
+	color: #fff;
+	font: 400 30px/88px "微软雅黑";
+	text-align: center;
+	margin: 30px 0 0 440px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+.start:hover{
+	color: #4066d0;
+	border: 2px solid #4066d0;
+}
+.power{
+	font: 400 56px/65px "微软雅黑";
+	color: #fff;
+	position: fixed;
+	top: 21px;
+	right: 310px;
+	-webkit-text-stroke: 3.0px rgb(183,205,232,0.6);
+		-moz-text-stroke: 3.0px rgb(183,205,232,0.6);
+		-ms-text-stroke: 3.0px rgb(183,205,232,0.6);
+		-o-text-stroke: 3.0px rgb(183,205,232,0.6);
+			text-stroke: 3.0px rgb(183,205,232,0.6);
+}
+.power:hover{
+	color: #c3d4e9;
+}
+/*第一页结束*/
+/*隐藏页开始*/
+.mess{
+	display: none;
+	position: fixed;
+	top: 84px;
+	left: 50%;
+	margin-left: -375px;
+	width: 790px;
+	height: 400px;
+	font: 400 29px/50px "HiTi";
+	background-color: #e5e5e5;
+	border: 5px solid #556fb5;
+	border-radius: 20px;
+	padding: 20px 0 0 25px;
+	box-shadow: 2px 2px 3px rgb(0,0,0,0.4);
+}
+.mess p{
+	float: left;
+}
+.mess i{
+	display: inline-block;
+	margin-left: 45px;
+}
+.mess-tx{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 105px;
+	height: 105px;
+	border: 2px solid #a35c60;
+	border-radius: 50%;
+	max-width: 105px;
+	background: url(../images/tx.jpg);
+	margin-left: 52px;
+	transition: all 2s;
+	-webkit-animation: 2s linear;
+	-o-animation: 2s linear;
+	animation: 2s linear;
+}
+.mess-tx:hover{
+	transform: rotateY(180deg);
+}
+/*隐藏页结束*/
+/*第二页开始*/
+.two{
+	width: 980px;
+	height: 550px;
+	/*display: none;*/
+	background: url(../images/bg2.jpg);
+}
+.two-bg{
+	width: 100%;
+	height: 100%;
+	background: rgb(0,0,0,0.2);
+}
+.two li{
+	display: inline-block;
+	width: 161px;
+	height: 161px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 5px 5px 3px rgb(0,0,0,0.4);
+	margin: 73px 75PX 20PX 80px;
+	font: 600 40px/161px "HeiTi";
+	background-color: #90bd4f;
+	-webkit-text-stroke: 3.0px rgb(72,63,58,0.6);
+		-moz-text-stroke: 3.0px rgb(72,63,58,0.6);
+		-ms-text-stroke: 3.0px rgb(72,63,58,0.6);
+		-o-text-stroke: 3.0px rgb(72,63,58,0.6);
+			text-stroke: 3.0px rgb(72,63,58,0.6);
+				-o-animation: two_li 2s linear;
+			-webkit-animation: two_li 2s linear;
+					animation: two_li 2s linear;
+					transition: all 1s;
+}
+.two li:hover{
+	transform: translateY(-15px);
+}
+
+.active{
+	box-shadow: 2px 2px 6px rgb(0,0,0,0.5);
+}
+.two li:nth-child(2){
+	background-color: #4fb1bd;
+}
+.two li:nth-child(3){
+	background-color: #b881c2;
+}
+.two li:nth-child(4){
+	background-color: #f17e4c;
+}
+.two li:nth-child(5){
+	background-color: #d57777;
+}
+.two li:nth-child(6){
+	background-color: #779ad5;
+}
+/*第三个开始*/
+.three{
+	width: 980px;
+	height: 550px;
+	/*display: none;*/
+	background: url(../images/bg1.jpg);
+}
+/*旋转盒子*/
+@-webkit-keyframes spin{
+	0%{
+		transform: rotateY(0);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
+@-moz-keyframes spin{
+	0%{
+		transform: rotateY(0);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
+@-o-keyframes spin{
+	0%{
+		transform: rotateY(0);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
+@-ms-keyframes spin{
+	0%{
+		transform: rotateY(0);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
+.cube{
+	position: relative;
+	top: 160px;
+	left: 100px;
+	width: 200px;
+	transform-style: preserve-3d;
+	animation: spin 4s linear infinite;
+	transition: all 1s linear;
+	
+}
+b{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	display: block;
+	font: 450 30px/200px "KaiTi";
+	text-align:center;
+	color: #ddd;
+	background: rgb(255,255,255,0.2);
+	box-shadow: inset 0 0 5px rgb(0,0,0,0.4);
+	transition: all 1s linear;
+}
+b.back{
+	transform: translateZ(-100px) rotateY(180deg);
+}
+b.right{
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+}
+b.left{
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: left center;
+}
+b.top{
+	transform: rotateX(-90deg) translateY(-100PX);
+	transform-origin: top center;
+}
+b.bottom{
+	transform: rotateX(90deg) translateY(100PX);
+	transform-origin: bottom center;
+}
+b.front{
+	transform: translateZ(100px);
+}
+.cube i{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 100px;
+	height: 100px;
+	display: block;
+	background: url(../images/tx.jpg);
+	transform: translateX(-50px);
+	transition: all 1s linear;
+}
+i.front{
+	  transform: translateZ(50px);
+	}
+	i.back{
+	  transform: translateZ(-50px) rotateY(180deg);
+	}
+	i.bottom{
+	  transform:rotateX(-90deg) translateY(50px);
+	  transform-origin: left bottom;
+	}
+	i.left{
+	  transform:rotateY(270deg) translateX(-50px);
+	  transform-origin: center left;
+	}
+	i.right{
+	  transform:rotateY(-270deg) translateX(50px);
+	  transform-origin: top right;
+	}
+	i.top{
+	  transform:rotateX(-270deg) translateY(-50px);
+	  transform-origin: left top;
+	}
+.cube:hover{
+	top: 150px;
+}
+.cube:hover b.top{
+	transform: translateZ(100px) rotateX(-210deg);	
+	transform: top center;	  
+}
+.cube:hover i{
+	top: -120px;
+}
+/*旋转盒子结束*/
+/*弹球部分开始*/
+.moonie{
+	width: 400px;
+	height: 200px;
+	background: #000;
+	position: relative;
+	top: 175px;
+	left: 500px
+}
+.me-left,.me-right{
+	position: absolute;
+	width: 5px;
+	height: 30px;
+	background: #fff;
+	-webkit-animation: 4s linear infinite;
+		-o-animation: 4s linear infinite;
+			animation: 4s linear infinite;
+}
+.me-left{
+	animation-name: me_left; 
+	margin: 94px 0 0 10px;
+}
+.me-right{
+	animation-name: me_rigth;
+	margin: 94px 0 0 380px;
+}
+.ball{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	margin: 100px 0 0 15px;
+	-webkit-animation: ball 4s linear infinite;
+		-o-animation: ball 4s linear infinite;
+			animation: ball 4s linear infinite;
+}
+@-webkit-keyframes me_left{
+	25%{
+		margin: 9px 0 0 10px;
+	}
+	50%{
+		margin: 20px 0 0 10px;
+	}
+	75%{
+		margin: 88px 0 0 10px;
+	}
+}
+@-o-keyframes me_left{
+	25%{
+		margin: 9px 0 0 10px;
+	}
+	50%{
+		margin: 20px 0 0 10px;
+	}
+	75%{
+		margin: 88px 0 0 10px;
+	}
+}
+@keyframes me_left{
+	25%{
+		margin: 9px 0 0 10px;
+	}
+	50%{
+		margin: 20px 0 0 10px;
+	}
+	75%{
+		margin: 88px 0 0 10px;
+	}
+}
+@-webkit-keyframes me_rigth{
+	25%{
+		margin: 70px 0 0 380px;
+	}
+	50%{
+		margin: 21px 0 0 380px;
+	}
+	75%{
+		margin: 160px 0 0 380px;
+	}
+}
+@-o-keyframes me_rigth{
+	25%{
+		margin: 70px 0 0 380px;
+	}
+	50%{
+		margin: 21px 0 0 380px;
+	}
+	75%{
+		margin: 160px 0 0 380px;
+	}
+}
+@keyframes me_rigth{
+	25%{
+		margin: 70px 0 0 380px;
+	}
+	50%{
+		margin: 21px 0 0 380px;
+	}
+	75%{
+		margin: 160px 0 0 380px;
+	}
+}
+@-webkit-keyframes ball{
+	 25% {
+        margin: 74px 0 0 375px;
+    }
+    50% {
+        margin: 20px 0 0 15px;
+    }
+    75% {
+        margin: 170px 0 0 375px;
+    }
+    90% {
+        margin: 195px 0 0 195px;
+    }
+}
+@-o-keyframes ball{
+	 25% {
+        margin: 74px 0 0 375px;
+    }
+    50% {
+        margin: 20px 0 0 15px;
+    }
+    75% {
+        margin: 170px 0 0 375px;
+    }
+    90% {
+        margin: 195px 0 0 195px;
+    }
+}
+@keyframes ball{
+	 25% {
+        margin: 74px 0 0 375px;
+    }
+    50% {
+        margin: 20px 0 0 15px;
+    }
+    75% {
+        margin: 170px 0 0 375px;
+    }
+    90% {
+        margin: 195px 0 0 195px;
+    }
+}
+/*弹球结束*/
